@@ -12,7 +12,7 @@ function ResumeUpload({ onSuccess, onError, isLoading, setIsLoading, error }) {
   const [fileName, setFileName] = useState("");
   const [selectedJob, setSelectedJob] = useState(""); // Job selection state
 
-  const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_BASE_URL = process.env.REACT_APP_API_URL || "https://ai-resume-analy.onrender.com";
 
   // Job descriptions for dropdown
   const jobOptions = [
