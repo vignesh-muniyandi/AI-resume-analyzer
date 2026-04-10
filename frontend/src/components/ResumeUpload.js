@@ -210,6 +210,10 @@ function ResumeUpload({ onSuccess, onError, isLoading, setIsLoading, error }) {
               type="button"
               className="upload-button"
               disabled={isLoading}
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('file-input').click();
+              }}
             >
               {isLoading ? "Uploading..." : "Choose File"}
             </button>
